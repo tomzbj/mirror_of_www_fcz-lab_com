@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta name="GENERATOR" content="Adobe PageMill 3.0J Mac">
+  <meta http-equiv="Content-Type" content="text/html;CHARSET=x-sjis">
+  <title>温度スイッチ</title>
+</head>
+<body style="background-color: rgb(255, 253, 230);">
+<p>
+<table width="57" border="1" cellspacing="2" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="100%"><b><font size="+1"><a href="tera-list.html">・戻る</a></font></b></td>
+    </tr>
+  </tbody>
+</table>
+</p>
+<center><b><font color="#0000ff" size="+1" face="平成角ゴシック">SSR使用AC100Vを直接
+ON/OFFできる</font></b></center>
+<center><b><font color="#0000ff" size="+3" face="平成角ゴシック">#254
+温度スイッチ</font></b></center>
+<center></center>
+<p><font face="平成角ゴシック">　ナショナルセミコンダクターズ社製の温度センサIC
+LM-35DZとSSRを組み合わせた温度スイッチです。　<br>
+　LM-35DZは2SC1815等と同じ大きさのＩＣです。　電源端子に電源をかければ、出力端子にそのときの温度に相当する電圧が出力されます。<br>
+　その電圧は、 0℃で
+0V、100℃で1Vと言う実に分かりやすい物です。したがってこの電圧をmV単位でデジタルテスターで計り一桁ずらして読めば特別な回路なしでデジタル
+温度計になります。<br>
+　ここではこのICセンサをソリッドステートリレーに組み合わせてAC回路を直接ON/OFFする回路を作ります。</font></p>
+<center><font face="平成角ゴシック">　　　　　　　　　　　　<br>
+<b>回路</b></font></center>
+<p><font face="平成角ゴシック">　第1図にその全回路図を示します。<br>
+　LM358はデュアルオペアンプ（オペアンプが二つ入った）のICです。　回路構成は第2図の通りで、LM35DZの温度出力電圧と、温度設定電圧（基
+準電圧）をLM358で比較します(コンパレータ回路)。　基準電圧としてはLEDを定電圧素子として使い、この電圧を10kΩの抵抗と10kΩの半固定
+抵抗で分圧します。　この定数のままで大体、5～95℃の温度設定ができます。<br>
+　Amp-1ではLM35DZの出力のほうが高い電圧を示したとき、LM358の出力回路に電圧が生じSSRをONとします。　また、Amp-2では設定
+温度より上に上がった時OFFになるように設計してあります。Amp-1を使うかAmp-2を使うかあらかじめ配線で選択しておいてください。　以後の説
+明はAmp-1を選択したとしてすすめることにします。</font></p>
+<p>
+<table width="450" border="1" cellspacing="2" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="100%"><img src="t-254.jpeg" width="756" height="738"
+ align="bottom" border="0" naturalsizeflag="3"></td>
+    </tr>
+  </tbody>
+</table>
+</p>
+<p><font face="平成角ゴシック">　第3図にプリント基板のパターン、第４図に実体配線図、第5図に各素子のピンコネクションを示しま
+す。<br>
+　AC関係負荷を含む回路は第6図のように配線します。ここでは100Vの商業線を使いますので感電やショートによる事故がないように細心の注意をして作
+業すると共に必ず適当なケースに入れて使用してください。<br>
+　赤のLEDは電源表示であり、緑のLEDはSSRがONとなった表示です。</font></p>
+<center><b><font size="+1" face="平成角ゴシック">使い方</font></b></center>
+<p><font face="平成角ゴシック">　使い方は簡単で、半固定抵抗を調整して実際の温度条件で温度設定をします。<br>
+　また、LM358の6番ピンの電圧をmV単位で計り、それを10で割った数字が設定温度になりますから、この電圧を計って温度設定をする事もできます。
+　ただし、この方法は、電圧計の内部抵抗による測定誤差が生じやすいので、内部抵抗の高いディジタル電圧計を使う等、十分気をつけてください。<br>
+　温度スイッチの感度は0.1℃の単位でよく働いてくれます。<br>
+　電源電圧は5Ｖから12Vの範囲で御使用下さい。<br>
+　</font></p>
+<center><font face="平成角ゴシック"><br>
+<b>注意</b></font></center>
+<p><font face="平成角ゴシック">(1)　消費電流はSSR動作時、12V で20mA。非動作時で10mAです。<br>
+(2)　LM35DZを100℃以上の雰囲気に置かないで下さい。<br>
+(3)　AC/100Vを使用しますので必ずケースの中に収納し、ACラインには必ずヒューズを取り付けるようにしてください。<br>
+(4)　AC100Vを扱うため、ショート、感電にはくれぐれも注意してください。</font></p>
+<center><font face="平成角ゴシック">　　　　　　　　　<br>
+<b>バリエーション</b></font></center>
+<p><font face="平成角ゴシック">(1)　お風呂の温度監視等に使いたいときは第7図に示すような防水処理を施してください。<br>
+(2)　温度設定を頻繁に変えたいときには、VRを10kΩ(B)型ボリュームと交換すると便利です。<br>
+(3)　この回路に使っているトライアックは最大規格16A迄使うことが出来ますが、大きな電流をON/OFFしたい時にはトライアックを基板からはず
+し、金属ケースか専用の放熱噐に取り付けてからあらためて基板との間を配線してください。</font>
+</p>
+<!-- #####ここからアクセスログ用スクリプトです##### -->
+<script language="JavaScript"><!--
+    var ImageWidth  =  1;
+    var ImageHeight =  1;
+    var ScriptUrl   = 'http://www.fcz-lab.com/cgi/ana/log4.cgi';
+    var CounterName = 't-254';
+    var Tag = '<img' + ' src="' + ScriptUrl + '?' + CounterName +
+              '@' + document.referrer + '"' +  ' width=' +
+              ImageWidth + ' height=' + ImageHeight + '>';
+    document.write(Tag);
+    // --></script>
+<noscript><img src="log4.cgi?name@" width="1" height="1"></noscript>
+<!-- #####ここまでアクセスログ用スクリプトです##### -->
+</body>
+</html>

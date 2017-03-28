@@ -1,0 +1,171 @@
+<HTML>  
+<HEAD>
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 3.0J Mac">
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=x-sjis">
+  <TITLE>日蝕自動撮影装置</TITLE>
+</HEAD>
+<BODY BGCOLOR="#fffde6">
+
+<P></P>
+
+<P><CENTER><B><FONT COLOR="#0000ff" SIZE="+1">キャノンEOS 630 用　</FONT></B></CENTER></P>
+
+<P><CENTER><B><FONT COLOR="#0000ff" SIZE="+3">2秒間隔連続撮影装置</FONT></B></CENTER></P>
+
+<P><FONT COLOR="#000000">　2002年6月11日にテニアン島で観測出来た金環日蝕は、金環日蝕時(第2接触から第3接触迄の時間)は42秒程度でした。<BR>
+　この４２秒間を2秒間隔で自動撮影しようと考えました。その回路の開発について報告します。</FONT></P>
+
+<P></P>
+
+<P>　使用する写真機は、キャノンEOS 630 です。<BR>
+　EOS 630はAF機能と自動巻き上げ機能を持っています。　望遠鏡撮影の場合、AF機能は必要無く、カメラはマニュアルで操作します。<BR>
+　問題は自動巻き上げ装置を利用して自動的にシャッターをきることです。</P>
+
+<P><CENTER><TABLE WIDTH="450" BORDER="1" CELLSPACING="2" CELLPADDING="0">
+  <TR>
+    <TD WIDTH="50%">
+      <P><CENTER><IMG SRC="2sec-sw-1.JPEG" WIDTH="267" HEIGHT="184"
+      NATURALSIZEFLAG="0" ALIGN="BOTTOM" BORDER="0"></CENTER></TD>
+    <TD WIDTH="50%">
+      <P><CENTER><IMG SRC="2sec-sw-2.JPEG" WIDTH="247" HEIGHT="186"
+      NATURALSIZEFLAG="0" ALIGN="BOTTOM" BORDER="0"></CENTER></TD>
+  </TR>
+  <TR>
+    <TD WIDTH="50%">
+      <P><CENTER>EOS 630 のリモートスイッチ</CENTER></TD>
+    <TD WIDTH="50%">
+      <P><CENTER>RS-60T3と2秒間隔連続撮影装置</CENTER></TD>
+  </TR>
+</TABLE></CENTER></P>
+
+<P>　EOS 630 にはレリーズシューはありません。リモートコントロールは専用のリモートスイッチ RS-60T3 を取り付ける必要があります。(このリモートスイッチを取り付けるためにカメラボデイにコネクタがついていることが必要です)　このスイッチボックスのボタンを押せばカメラにさわらずにシャッタ－をきることが出来、かつフィルムの巻き上げが出来ます。</P>
+
+<P>　このリモートスイッチを押した時の変化をリモートコントローラを連結しているコードに伝えれば自動的に写真を撮ることができるはずです。</P>
+
+<P>　そこでリモートコントローラを分解して見ました。<BR>
+　ボデイにつながるコードは2芯のシールドワイヤ(つまりコードとして3本)でした。ボタンを押すとシールドコードとあとの二本、つまり全部の線がショート状態になります</P>
+
+<P><CENTER><TABLE WIDTH="182" BORDER="1" CELLSPACING="2" CELLPADDING="0">
+  <TR>
+    <TD WIDTH="100%">
+      <P><CENTER><IMG SRC="2sec-sw-3.JPEG" WIDTH="144" HEIGHT="72"
+      ALIGN="BOTTOM" BORDER="0" NATURALSIZEFLAG="3"></CENTER></TD>
+  </TR>
+  <TR>
+    <TD WIDTH="100%">
+      <P><CENTER>リモ－トコントロ－ラの構造</CENTER></TD>
+  </TR>
+</TABLE></CENTER></P>
+
+<P>　しかし、良く観察すると中の白い線をシールド線に接触することによってシャッターがきれることが判りました。　このことからこの二本の線を2秒毎に1回ショートする回路を作れば良いことになります。</P>
+
+<P>　ところでこの2本の線のショートですが、トランジスタスイッチでコントロールできるものでしょうか?テスターで極性を計ってみると白い線に5Vの電圧が来ていることが判りました。<BR>
+　実験は2SC1815を使いました。白い線にコレクタをつなぎ、エミッタをシールド線につなぎました。そしてコレクタとベースを指で摘んでみると写真機のシャッターが見事に働きました。　まずは成功です。</P>
+
+<P><CENTER><TABLE WIDTH="450" BORDER="1" CELLSPACING="2" CELLPADDING="0">
+  <TR>
+    <TD WIDTH="50%">
+      <P><CENTER><IMG SRC="2sec-sw-4.jpeg" WIDTH="194" HEIGHT="94"
+      ALIGN="BOTTOM" BORDER="0" NATURALSIZEFLAG="3"></CENTER></TD>
+    <TD WIDTH="50%">
+      <P><CENTER><IMG SRC="2sec-sw-5.JPEG" WIDTH="216" HEIGHT="101"
+      ALIGN="BOTTOM" BORDER="0" NATURALSIZEFLAG="3"></CENTER></TD>
+  </TR>
+  <TR>
+    <TD WIDTH="50%">
+      <P><CENTER>トランジスタSWで働いた</CENTER></TD>
+    <TD WIDTH="50%">
+      <P><CENTER>外部電源にするとなぜか働かない</CENTER></TD>
+  </TR>
+</TABLE></CENTER></P>
+
+<P>　ここで問題になることは白い線に来ている5Vで2秒に1回のON信号を作ることは大変です。どうしても別な電源が必要になります。そこで外部電源を使い右上図のような回路を作って見ました。</P>
+
+<P>　どうしたことでしょう。これが働かないのです。ベース電流が足りないのでしょうか。ベースのバイアス抵抗の価を変えてみたのですが全然動いてくれません。</P>
+
+<P>　原因はいくら考えても判りません。しかし、明日は出発しなければなりませんから何とかしなければなりません。この葛藤のために大分時間を浪費してしまいました。</P>
+
+<P>　いろいろ考えた末、「FETならどうだ」ということになりました。3SK114-Oなら無信号時にドレイン-ソース間はOFFになっているはずです。早速図のように2SC1815を3SK１１４-Oに変更した回路を作りました。この回路でゲート電圧がゼロVの時はシャッターが働かず、適当な電圧をかけることによってシャッターが働くことを確認しました。</P>
+
+<P><CENTER><TABLE WIDTH="258" BORDER="1" CELLSPACING="2" CELLPADDING="0">
+  <TR>
+    <TD WIDTH="100%"><IMG SRC="2sec-sw-6.JPEG" WIDTH="241" HEIGHT="86"
+      ALIGN="BOTTOM" BORDER="0" NATURALSIZEFLAG="3"></TD> 
+  </TR>
+  <TR>
+    <TD WIDTH="100%">
+      <P><CENTER>3SK114-Oでようやく難関突破</CENTER></TD>
+  </TR>
+</TABLE></CENTER></P>
+
+<P>　これでスイッチャーの回路は完成しました。　次はいよいよ2秒のタイマーの回路です。<BR>
+正確な2秒を得るために水晶時計用の32.768kHzの水晶を使いそれを16分周して2秒を得ることにしました。発振は4069を使い発振成分をバッファに通します。分周器は74HC4040
+2個使います。回路を図に示します。</P>
+
+<P><CENTER><TABLE WIDTH="450" BORDER="1" CELLSPACING="2" CELLPADDING="0"
+HEIGHT="388">
+  <TR>
+    <TD WIDTH="100%" HEIGHT="20"><IMG SRC="2sec-sw-9.JPEG" WIDTH="491"
+      HEIGHT="181" NATURALSIZEFLAG="0" ALIGN="BOTTOM" BORDER="0"></TD> 
+  </TR>
+  <TR>
+    <TD WIDTH="100%" HEIGHT="20">
+      <P><CENTER>RS-60T3と2秒間隔連続撮影装置回路図</CENTER></TD>
+  </TR>
+  <TR>
+    <TD WIDTH="100%" HEIGHT="315">
+      <P><CENTER><IMG SRC="2sec-sw-10.JPEG" WIDTH="418" HEIGHT="306"
+      NATURALSIZEFLAG="0" ALIGN="BOTTOM" BORDER="0"></CENTER></TD>
+  </TR>
+  <TR>
+    <TD WIDTH="100%" HEIGHT="20">
+      <P><CENTER>RS-60T3と2秒間隔連続撮影装置の内部写真</CENTER></TD>
+  </TR>
+</TABLE></CENTER></P>
+
+<P>　実はこの回路はパーフェクトではありません。2秒毎に一つのパルスを発生してはくれますがいろいろと問題を抱えているのです。　しかしタイムアップでこのままテニアン島へ持って行くことになりました。　その結果カメラに対する撮影指令はしっかり出すことが出来ました。しかし、シャッター膜に油が滲み出すと云うアクシデントに見舞われ写真撮影は残念ながら失敗しました。(テニアン記参照)</P>
+
+<P>　テニアンから帰って来てから将来のためにこの回路を完全なものにしておこうと考えました。<BR>
+　それではこの回路のどこがパーフェクトではないのでしょうか?</P>
+
+<P>　(1)電源スイッチを入れるとまず一つパルスが出ます。そしてその1秒後にパルスが出て、以後2秒毎に正常なパルスが出力されます。(スタートがおかしい)<BR>
+　(2)最初、リセットスイッチを押しながら電源スイッチを入れると1秒のインターバルは発生しませんが電源を入れた瞬間に1つだけパルスが出力されます。<BR>
+　(3)リセットスイッチを離すとすぐに撮影されず2秒後から正常に働きます。<BR>
+　(4)これはあとから分かったことですが、カメラのセットがS(シングル)でなく、C(連続)になっていると出力パルスの幅が長いと(4040の単純な出力の場合、1秒になる)連続撮影されてしまうことがあるので、この現象を回避するためにパルス幅を狭くするためのCRによる時間遅れが発生していました。(一旦走り出せば2秒は正確ですが、)</P>
+
+<P>　理想的には、リセットスイッチを押しながら電源スイッチを入れた時、パルスが出力されず、リセットスイッチを離した瞬間にパルスが出力し、以後2秒毎に出力されるというものです。</P>
+
+<P>　上記(4)の現象を回避するため15分周(1秒)と混合して、0.5秒ON、1.5秒OFFという出力を得るためにIC-1
+を14011B からNORである 14001Bに変更し、一段NORを通して正常化をはかりました。<BR>
+　しかし、今度はリセットスイッチを押すと連続した出力が現れるというアクシデントに見回れました。</P>
+
+<P>　そのあと、ICをNANDにしたりNORにしたりいろいろと実験しました。しかしこれらのすべてをここに書きますと冗長な物になりますから省略します。　最後に図に示すような回路でようやく完全なものになりました。(出力の信号を3SK114-Oへつなぐ)</P>
+
+<P><CENTER><TABLE WIDTH="450" BORDER="1" CELLSPACING="2" CELLPADDING="0">
+  <TR>
+    <TD WIDTH="50%"><IMG SRC="2sec-sw-8.JPEG" WIDTH="216" HEIGHT="198"
+      ALIGN="BOTTOM" BORDER="0" NATURALSIZEFLAG="3"></TD> 
+    <TD WIDTH="50%"><IMG SRC="2sec-sw-7.JPEG" WIDTH="288" HEIGHT="158"
+      ALIGN="BOTTOM" BORDER="0" NATURALSIZEFLAG="3"></TD> 
+  </TR>
+  <TR>
+    <TD WIDTH="50%">
+      <P><CENTER>16分周と15分周の出力を合成する</CENTER></TD>
+    <TD WIDTH="50%">
+      <P><CENTER>最終回路(IC-2等、一部省略)</CENTER></TD>
+  </TR>
+</TABLE></CENTER></P>
+
+<P></P>
+
+<P>　今年の12月にオーストラリアで皆既日蝕があります。その継続時間はわずか30秒です。この皆既日蝕の場合の露出は継続時間が短いので、1秒を中心に1/2、1、2秒
+または、1/3、1、3秒にセットして撮影しようと考えています。　その場合前者では4.5秒程度、後者で6秒程度のタイマーが必要になります。<BR>
+　まだ行くかどうかも決めてありませんが、その場合はこの回路をまた改造することになると思います。</P>
+
+<P>　電子回路の技術は必要に応じて考えることで向上しますのでみなさんもぜひいろいろな目的を作りチャレンジしてみてください。<BR>
+</P>
+
+<P>　
+
+</BODY>
+</HTML>

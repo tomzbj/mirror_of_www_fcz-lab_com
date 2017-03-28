@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta name="GENERATOR" content="Adobe PageMill 3.0J Mac">
+  <meta http-equiv="Content-Type" content="text/html;CHARSET=x-sjis">
+  <title>Untitled Document</title>
+</head>
+<body style="background-color: rgb(255, 253, 230);">
+<center><b><font color="#0000ff" size="+3">#252 MUレーダーSG</font></b></center>
+<p><font color="#000000" face="平成角ゴシック">100円ラジオで流星の電波観測用MUレーダーを聞くクリスタルコン
+バータは完成しても46.5MHzがバリコンのどこかと云うことが分かりにくいと云う欠陥があります。<br>
+　特に製作講習会で一度に沢山の台数を製作する場合にはSGがあれば良いのですが、それがないと問題になりそうです。<br>
+　そこで同じ100円ラジオを改造して「MUレーダーSG」を作りました。</font></p>
+<p><font color="#000000" face="平成角ゴシック">　</font></p>
+<center><b><font color="#000000" size="+1" face="平成角ゴシック">回路</font></b></center>
+<p><font color="#000000" face="平成角ゴシック">　まだ走り書きですが回路図を</font><font
+ face="平成角ゴシック">示します</font><font color="#000000" face="平成角ゴシック">。</font></p>
+<center>
+<table width="579" border="0" cellspacing="0" cellpadding="0"
+ height="380">
+  <tbody>
+    <tr>
+      <td width="100%" height="373">
+      <center><img src="t-252-1.gif" width="560" height="351"
+ naturalsizeflag="0" align="bottom" border="0"></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<p><font color="#000000" face="平成角ゴシック">　回路構成は、１００円ラジオの局部発振周波数と#251で使う
+27.205MHzの水晶で作った</font>45.341MHzを混合させ46.5MHzを合成させると云うものです。(あらかじめ#251　MU受
+信機の内容を頭に入れておいてください)</p>
+<p>　100円ラジオの局部発振はバ－アンテナをはずしたA'とB'を直結した所から取り出し、クリスタルコンバータの入力に入れます。</p>
+<p>　100円ラジオの局部発振周波数は本来受信する周波数+455kHzですから46.5MHzを得ようとすると、<br>
+　　　　　46.5-45.341-0.455=0.704<br>
+すなわち受信ダイアルを　704kHz　に合わせれば良いことになります。</p>
+<p>　MUレーダーはパルス変調が掛かっていますから、出力する信号もそれらしくパルス変調を掛けてみました。　2SA1015　2個で構成するマルチ
+バイブレ－タがそれで、電源そのものをON/OFFしています。</p>
+<center><b><font size="+1">製作</font></b></center>
+<p>　クリスタルコンバータ部の製作はLCに変更はありますがMUレーダー用のクリスタルコンバータとほぼ同じですからここでは特に記しません。</p>
+<p>　マルチバイブレータの部分の実体配線図と総合配線図を下に示します。</p>
+<center>　</center>
+<center>
+<table width="450" border="1" cellspacing="2" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="100%"><img src="t-252-2.gif" width="562" height="771"
+ align="bottom" border="0" naturalsizeflag="3"></td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<center><b><font size="+1">較正</font></b></center>
+<p>　このままではダイアルを廻すことによって周波数は大きく変化しますからどこが46.5MHzか判りません。そこで出力を46.5MHzに設定して
+やる必要が生じます。</p>
+<p>　とりあえずMU SGから信号が出ていることを確かめて下さい。　この動作確認が済んだら基板類を固定します。</p>
+<p>　周波数を正確に設定できる受信機がありましたらAMモードで46.500MHzを受信してください。　アンテナはなるべく小さなものにして入力を
+絞ります。　MU
+SGを働かせ、上記の受信機で信号が受かるように100円ラジオのダイアルを廻します。Sメータがあればその指示が最大になるようにします。　これで
+46.5MHzの信号が発射されたことになります。</p>
+<p>　周波数カウンタを使う場合はマルチバイブレータの回路の電源と出力をショートさせ(変調回路をカットする)、出力の周波数を46.5MHzになる
+ように調整します。　パルス変調を掛けた状態でカウンタを働かせるとパルスのOFFの部分でカウントしませんので正確な周波数が測定出来ませんから御注意
+下さい。</p>
+<p>　較正が終りましたら100円ラジオのダイアルが動かないようにセロテープ等で固定します。</p>
+<center><b><font size="+1">使用法</font></b></center>
+<p>　MU SGを働かせておいて、#251 MU受信機のダイアルをMU
+SGの信号が聞こえるようにセットしてからダイアルをテープ等で固定します。</p>
+<p>　#251 MU受信機の較正を行う時はその都度改めて較正することをお薦めします。
+</p>
+<!-- #####ここからアクセスログ用スクリプトです##### -->
+<script language="JavaScript"><!--
+    var ImageWidth  =  1;
+    var ImageHeight =  1;
+    var ScriptUrl   = 'http://www.fcz-lab.com/cgi/ana/log4.cgi';
+    var CounterName = 't-252';
+    var Tag = '<img' + ' src="' + ScriptUrl + '?' + CounterName +
+              '@' + document.referrer + '"' +  ' width=' +
+              ImageWidth + ' height=' + ImageHeight + '>';
+    document.write(Tag);
+    // --></script>
+<noscript><img src="log4.cgi?name@" width="1" height="1"></noscript>
+<!-- #####ここまでアクセスログ用スクリプトです##### -->
+</body>
+</html>

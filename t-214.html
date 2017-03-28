@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta name="GENERATOR" content="Adobe PageMill 3.0J Mac">
+  <meta http-equiv="Content-Type" content="text/html;CHARSET=x-sjis">
+  <title>Untitled Document</title>
+</head>
+<body style="background-color: rgb(255, 253, 230);">
+<p>
+<table width="57" border="1" cellspacing="2" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="100%"><b><font size="+1"><a href="tera-list.html">・戻る</a></font></b></td>
+    </tr>
+  </tbody>
+</table>
+<table width="167" border="1" cellspacing="2" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="100%">　<font color="#ff0000">このページにはまだ図面の張り付けが済んでいません。　
+あしからず</font></td>
+    </tr>
+  </tbody>
+</table>
+</p>
+<center><b><font color="#0000ff" size="+3" face="平成角ゴシック">#214　50MHz
+AMスポット受信機</font></b></center>
+<p><font face="平成角ゴシック">　忍者キット203と同じSANYOのLA-1600を使った50MHzのAM受信機です．<br>
+　このLA-1600一石でVHFの受信機ができれば非常にコンパクトな受信機になるのですが，残念なことに使用できる周波数の上限は20MHz付近で
+す．<br>
+　そのままでは50MHzの受信機は無理ですが，この有能なICを使ってできるだけ簡単な受信機を作りたいと考えました．その結果，周波数は
+50.620MHzのスポットで，シングルスーパになりました．</font></p>
+<center><font face="平成角ゴシック">　　　　　　　　　　　<br>
+<b>回路</b></font></center>
+<p><font face="平成角ゴシック">　第214-1図に全回路図を示します．<br>
+　#203と比較して回路を説明しましょう．<br>
+　<b>RF増幅</b>　　アンテナからの信号は，#203はいきなりミキサに入りましたが，ここでは3SK241によるRF増幅回路に入ります．LA
+-1600の中にもRFアンプが入っていますが，50MHzではほとんど増幅能力はありません．<br>
+　ミキサ　ICの周波数特性が20MHzだと先に記しましたが，発振回路を外付けにすることによって50MHzでも使えることがわかりました．<br>
+　<b>水晶発振</b>　50.620MHzを受信するために，それより455kHz低い50.165MHzを水晶発振器で作ります．<br>
+　<b>中間周波増幅</b>　セラミック・フィルタがムラタSFZ-455Aになったほかは#203と変りません．このフィルタは#203で使っている
+ムラタのCFG-455Fと比べる帯域幅がかなり甘いのですが，50MHzの場合はこのフィルタでも十分実用になります．<br>
+　<b>AF増幅</b>　#203と同じです．<br>
+　<b>Sメータ</b>　省略しました．もし取り付けたければSメータ用の呼び端子が設けてありますから，#203と同じ回路を外付けで用意してくださ
+い．<br>
+　<b>電源</b>　UM-5×2，3Vです．</font></p>
+<center><font face="平成角ゴシック">　　　　　　　　　　　　<br>
+<b>製作</b></font></center>
+<p><font face="平成角ゴシック">　第214-2図にプリント基板のパターン．第214-3図に部品配置図を示します．<br>
+　各パーツは無理のない範囲で，できるだけリード線が短くなるように基板に押し込んでください．</font></p>
+<center><font face="平成角ゴシック">　　　　　　　　　　　　<br>
+<b>調整</b></font></center>
+<p><font face="平成角ゴシック">　誤配線のないことを確かめてから電源を入れます．<br>
+　水晶発信器が働いていることを#006
+RFプローブで確かめてから，50.620MHzのAM信号を受け（#009などで送信する）各コイルのコアを信号が一番強くなるように調整します．</font></p>
+<center><font face="平成角ゴシック">　　　　　　　　　　　　<br>
+<b>運用</b></font></center>
+<p><font face="平成角ゴシック">　寺子屋シリーズ#009等とトランシーブ操作を行うには，第214-5図のように配線してください．<br>
+　この場合受信機の電源は特に切る必要はありません．自局の送信電波をモニタすることができます．</font>
+</p>
+<!-- #####ここからアクセスログ用スクリプトです##### -->
+<script language="JavaScript"><!--
+    var ImageWidth  =  1;
+    var ImageHeight =  1;
+    var ScriptUrl   = 'http://www.fcz-lab.com/cgi/ana/log4.cgi';
+    var CounterName = 't-214';
+    var Tag = '<img' + ' src="' + ScriptUrl + '?' + CounterName +
+              '@' + document.referrer + '"' +  ' width=' +
+              ImageWidth + ' height=' + ImageHeight + '>';
+    document.write(Tag);
+    // --></script>
+<noscript><img src="log4.cgi?name@" width="1" height="1"></noscript>
+<!-- #####ここまでアクセスログ用スクリプトです##### -->
+</body>
+</html>

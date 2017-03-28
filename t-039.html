@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta name="GENERATOR" content="Adobe PageMill 3.0J Mac">
+  <meta http-equiv="Content-Type" content="text/html;CHARSET=x-sjis">
+  <title>386アンプ</title>
+</head>
+<body style="background-color: rgb(250, 255, 192);">
+<p>
+<table width="43" border="1" cellspacing="2" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="100%">
+      <center><a href="tera-list.html">戻る</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</p>
+<center><b><font size="+3">　</font><font color="#0000ff" size="+3">#０３９　
+ＬＭ３８６　アンプ<br>
+</font></b></center>
+<p><br>
+　ナショナルセミコンダクターズ社のLM386というICは小電力低周波増幅用のICとして、外付け部品が非常に少なく実に便利なICです。<br>
+　電源電圧は4Vから12Vという低電圧で使用できますから006P電池を使ってもびっくりするくらい大きな音を出す事ができます。</p>
+<center>
+<table width="239" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="100%">
+      <center><img src="t-039-1.gif" width="216" height="137"
+ align="bottom" border="0" naturalsizeflag="3"></center>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+      <center><b>第１図</b>　LM３８６アンプ回路図</center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<p><br>
+　LM386の入力は2番ピン（非反転）と3番ピン（反転）の二つがあります。　位相の問題がなければどちらの入力端子に入力しても構いませんが、私の経
+験では高周波回路と混在する場合は2番ピンに入力した方が動作が安定しているようです。<br>
+　C1は回り込み防止のパスコン。C2は電源インピーダンスを低くするためのコンデンサです。C3はゲイン調整用のコンデンサで、これを取り去ると増幅率
+が一桁下がります。C4は高域での発振防止用のパスコンで、これがないと砂を噛んだような音になることがあります。<br>
+　組み立てはFCZ小型IC基板を使って組み上げます。</p>
+<center>
+<table width="341" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="100%">
+      <center><img src="t-039-2.gif" width="324" height="317"
+ align="bottom" border="0" naturalsizeflag="3"></center>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+      <center><b>第２図</b>　実体配線図</center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<center><b><font size="+1">ノウハウ</font></b></center>
+<p>　■　電源として006Pを用い、C2を取り外して置くと、電池が消耗してきたとき発振してしまうようになります。これを電池の消耗度チェッカとし
+て使うこともできます。<br>
+　■　二つの入力端子に同時に入力を入れる事ができます。ステレオのLとRの信号を同時にいれますと、歌手の声が消えてカラオケになってしまいます。<br>
+　■　2台のLM386を逆位相で動作させ、両出力の間にスピーカを入れると…出力は2倍ではなく4倍になります。　その理由を考えてみましょう。
+</p>
+<!-- #####ここからアクセスログ用スクリプトです##### -->
+<script language="JavaScript"><!--
+    var ImageWidth  =  1;
+    var ImageHeight =  1;
+    var ScriptUrl   = 'http://www.fcz-lab.com/cgi/ana/log4.cgi';
+    var CounterName = 't-039';
+    var Tag = '<img' + ' src="' + ScriptUrl + '?' + CounterName +
+              '@' + document.referrer + '"' +  ' width=' +
+              ImageWidth + ' height=' + ImageHeight + '>';
+    document.write(Tag);
+    // --></script>
+<noscript><img src="log4.cgi?name@" width="1" height="1"></noscript>
+<!-- #####ここまでアクセスログ用スクリプトです##### -->
+</body>
+</html>

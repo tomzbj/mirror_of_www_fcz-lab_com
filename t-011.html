@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta name="GENERATOR" content="Adobe PageMill 3.0J Mac">
+  <meta http-equiv="Content-Type" content="text/html;CHARSET=x-sjis">
+  <title>9V電源アダプタ</title>
+</head>
+<body style="background-color: rgb(252, 255, 192);">
+<p>
+<table width="43" border="1" cellspacing="2" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="100%">
+      <center><a href="tera-list.html">戻る</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</p>
+<center><b><font color="#0000ff" size="+3">#０１１　９Ｖ電源アダプタ<br>
+</font></b></center>
+<p>　　7809というICは入力端子に
+12～35Vの直流電圧を加えることによって9Vの出力を得る「定電圧レギュレータICです。　取り出せる電流は最大1Aです。<br>
+　入出力端子と並列に入っている 0.01μFはノイズ吸収用のコンデンサです。<br>
+　入力側の電源にハムが乗っているような場合は平滑コンデンサを入力側に取り付けてください。</p>
+<center>
+<table width="450" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="50%"><br>
+      </td>
+      <td width="50%"><img src="t-011-2.gif" width="216" height="126"
+ align="bottom" border="0" naturalsizeflag="3"></td>
+    </tr>
+    <tr>
+      <td width="50%"><br>
+      </td>
+      <td width="50%">
+      <center><b>第２図</b>　実体配線図</center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<p>　用途は、乾電池の006Pの代用です。<br>
+そのため、006P用のスナップが入っていますが、注意しなければならないことにこのスナップの接続があります。　それは出力のプラス側にスナップの
+「黒」、マイナス側に「赤」を取り付けるという事です(*印)。　ちょっと反対のような気がしますが、このスナップが電池側の出力端子であるための措置で
+すから注意して下さい。</p>
+<center><br>
+<b><font size="+1">付録</font></b></center>
+<center>
+<table width="413" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="100%">
+      <center><img src="t-011-3.gif" width="396" height="252"
+ align="bottom" border="0" naturalsizeflag="3"></center>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%">
+      <center><b>第3図</b>　ひも付き006Pの作り方</center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<p>　「ひも付き006P」　使い終わった乾電池
+006Pを分解して、ケースを痛めないように中身を出してから電池のスナップをきれいに取り外します。<br>
+　回路のスナップ部を今はずした電池のスナップと交換してから内部にこの
+#011を入れ、（ここでもプラス、マイナスを間違えないように）接着剤で固定します。<br>
+　入力様のコードを底蓋に通して、ケースに装着し、これらも接着剤で固定して「ひも付き006P」の完成です。　スナップのプラスの電極に小さな穴が開い
+ていますから、細い（小さい）
+LEDをけずってその穴に通し接着剤で固定すると、通電時にLEDが光り、更に楽しいものになります。<br>
+　その場合の回路は、第２図の様にしてください。</p>
+<center><br>
+<b><font size="+1">Know how</font></b></center>
+<p>　<b>(1)</b> 本回路とは直接関係がないかも知れませんが知っていて損のない情報です。<br>
+　電圧レギュレータICの内部では、入力電圧と出力電圧の差に出力電流を掛けた電力が熱になります。　例えば入力電圧 14V、出力電流
+0.5Aの場合、<br>
+(14-9)×0.5 ＝ 2.5 (W)　…と、2.5Wの電力が熱となりICを暖めます。<br>
+　このICにはサーマルシャットダウンといって温度が規定の値より上昇した場合、機能を停止させる安全回路が組み込まれていますが、なるべくこの機能を働
+かせないためには、<br>
+　■入力電圧は12V以上で、なるべく低いものに設定し、<br>
+　■ICに放熱器を付ける。　<br>
+という配慮をして下さい。<br>
+　なお、サーマルシャットダウン回路が働いて出力が出なくなってしまった場合には、いったん電源を切って、ICの温度が冷めるのを待って再度電源を入れ直
+して下さい。</p>
+<p>　<b>(2)</b>レギュレータICには、78M・・、78L・・、79・・、79M・・、79L・・等と言うシリーズがあります。　Mがつく
+ものは最大電流規格が0.5A、Lがつくものは0.1A、頭の2文字が79のものはマイナス電源です。<br>
+　Lのシリーズはピンコネクション(ピンの接続)がここで使った7809とは逆になりますから御注意ください。
+</p>
+<!-- #####ここからアクセスログ用スクリプトです##### -->
+<script language="JavaScript"><!--
+    var ImageWidth  =  1;
+    var ImageHeight =  1;
+    var ScriptUrl   = 'http://www.fcz-lab.com/cgi/ana/log4.cgi';
+    var CounterName = 't-011';
+    var Tag = '<img' + ' src="' + ScriptUrl + '?' + CounterName +
+              '@' + document.referrer + '"' +  ' width=' +
+              ImageWidth + ' height=' + ImageHeight + '>';
+    document.write(Tag);
+    // --></script>
+<noscript><img src="log4.cgi?name@" width="1" height="1"></noscript>
+<!-- #####ここまでアクセスログ用スクリプトです##### -->
+</body>
+</html>

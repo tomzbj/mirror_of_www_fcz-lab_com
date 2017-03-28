@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta name="GENERATOR" content="Adobe PageMill 3.0J Mac">
+  <meta http-equiv="Content-Type" content="text/html;CHARSET=x-sjis">
+  <title>多目的弛張発振器</title>
+</head>
+<body style="background-color: rgb(252, 255, 192);">
+<p>
+<table width="43" border="1" cellspacing="2" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="100%">
+      <center><a href="tera-list.html">戻る</a></center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</p>
+<center><b><font color="#0000ff" size="+3">#０１８　多目的ＡＦ弛張発振器<br>
+</font></b></center>
+<p>　　　　　　　　　　　</p>
+<center><b><font size="+1">弛張発振器の動作原理</font></b></center>
+<center>
+<table width="450" border="1" cellspacing="2" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="50%"><img src="t-018-1.gif" width="468" height="180"
+ align="bottom" border="0" naturalsizeflag="3"></td>
+    </tr>
+    <tr>
+      <td width="50%">　　　<b>第１図</b>　弛張発振器回路図　　　　　　　　　<b>第２図</b>　実体は緯線図</td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<center></center>
+<p>　第１図のコンデンサC1に抵抗R1を通して充電をしていきます。　その電圧がQ1のスレッシホールド電圧（シリコントランジスタの場合、約
+0.5～0.6V）になったとき、それまでOFFであったQ1がONとなります。<br>
+　これがトリガ（引き金）になってQ2がONになりスピーカに電流が流れます。<br>
+　スピーカに電流が流れることによって、Q2のコレクタに電圧が発生します。　この電圧がC1を放電させ、Q1は再びOFFとなります。<br>
+　そしてまた、C1に充電されて上記の動作を繰り返します。<br>
+　以上の動作は筧の水をひいて竹の筒を「ポン」と鳴らす「ししおどし」と良く似ています。　この場合、筧の細さがR1の大きさ、竹筒の大きさがC1の大き
+さ、と対比する事ができますから、C1.R1共にその値を大きくしていけば放電する周期は長く、周波数的には低い音になっていきます。</p>
+<center><b><font size="+1">　<br>
+製作</font></b></center>
+<p>　基本回路だけなら、第２図に示すように3PのFCZ基板に組み立てる事が出来ます。<br>
+　Q2はゲルマニュウムトランジスタを使ってください。シリコントランジスタでも働く事は働くのですが音が余り大きくなってくれません。</p>
+<center><br>
+<b><font size="+1">応用</font></b></center>
+<p>　この弛張発振器はずいぶん沢山の用途に応用できます。</p>
+<p>◆モールス練習機（第３図）</p>
+<p>　端子a,b間にキーを入れてモールスを打つとそれに従い「プープー」という音が聞こえます。</p>
+<center>
+<table width="450" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="100%"><img src="t-018-3.gif" width="504" height="108"
+ align="bottom" border="0" naturalsizeflag="3"></td>
+    </tr>
+    <tr>
+      <td width="100%">　　<b>第３図</b>　モールス練習機　　　<b>第４図</b>　雨降り検知器　　　　<b>第５
+図</b>　お風呂ブザー</td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<p><br>
+◆雨降り検知器（第４図）<br>
+　第４図のような雨滴検知板を用意してこれを屋外に設置しておきます。　雨が降り出すとa,b間に導通が起こり、発振が始まります。</p>
+<p>◆お風呂ブザー（第５図）<br>
+　第５図の用にa,b間に、電灯線用のビニール並行線を取付け、あらかじめ風呂桶の希望する水位の位置に設置しておいてください。　水面が上がり、所定の
+位置に達するとブザーが鳴ります。　ビニル線の先端は少し段違いに切っておくと誤動作を少なくすることができます。</p>
+<p>
+<table width="450" border="1" cellspacing="2" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="100%"><img src="t-018-6.gif" width="504" height="101"
+ align="bottom" border="0" naturalsizeflag="3"></td>
+    </tr>
+    <tr>
+      <td width="100%">　　<b>第６図</b>　防犯ブザー　　　　　<b>第７図</b>　導通テスター　　　　　<b>第
+８図</b>　光線ブザー</td>
+    </tr>
+  </tbody>
+</table>
+</p>
+<p><br>
+◆防犯ブザー（第６図）<br>
+　第６図の様にドアとドア枠（窓と窓枠）の間にマグネットとマグネットスイッチを設置すれば、ドアが開いたときブザーが鳴ります。<br>
+　マグネットスイッチにはN.C（ノルマルクローズ）とN.O(ノルマルオープン）の二種類があります。<br>
+　N.Cはマグネットを離した状態で「閉」（クローズ、ON）になっていて、マグネットを近づけるると「開」（オープン，OFF）になるものをいいます。<br>
+　N.OはN.Cの反対動作をするものです。</p>
+<p>◆導通テスタ（第７図）<br>
+　第７図のように配線すれば「導通テスタ」として使用できます。<br>
+　被測定回路の抵抗が大きいほど周波数は低くなり、導通がなければ音は発しません。<br>
+テスト棒の「黒」に（＋）が出てくるのは普通のテスタの極性に合わせたものです。</p>
+<p>◆光線ブザー（第８図）<br>
+　第８図の様にa,b間にCdSを取り付けると周囲が暗いときには低い音、明るくなると高い音になります。<br>
+　これに手をかざしてメロディーが引けたら、あなたは天才。</p>
+<p>
+<table width="569" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="100%"><img src="t-018-9.gif" width="540" height="90"
+ align="bottom" border="0" naturalsizeflag="3"></td>
+    </tr>
+    <tr>
+      <td width="100%"><b>第９図</b>　シグナルインジェクタ　　<b>第１０図</b>　電子楽器　　<b>第１１図　</b>横
+行ボリュームで音程を調整</td>
+    </tr>
+  </tbody>
+</table>
+</p>
+<p>◆シグナルインジェクタ（第９図）<br>
+　第９図に示す様にa,b間をショートし、c,d間に入っていたスピーカをはずして47Ωの抵抗に変えてからcにテスト棒を付けるとシグナルインジェクタ
+になります。　シグナルインジェクタに関する使用法の説明は、#036
+RF/AFノイズインジェクタの項を参照してください。</p>
+<p>◆電子楽器（第10図）<br>
+　第10図の様に半固定抵抗とスイッチを音の数だけ並べ、ド・レ・ミ…　と調律しておけば電子楽器の出来上がり。　音質はスコットランドのバッグパイプの
+様な音です。　そのためかスコットランド民謡が良く似合います。</p>
+<p>　第11図の回路は横行ボリュームの位置とスイッチを押すタイミングで演奏します。　こちらのほうがコストは安く上がります。<br>
+</p>
+<p>
+<table width="450" border="1" cellspacing="2" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="100%"><img src="t-018-12.gif" width="504" height="126"
+ align="bottom" border="0" naturalsizeflag="3"></td>
+    </tr>
+    <tr>
+      <td width="100%">　　　<b>　第１２図</b>　電子サイレン　　　　　　　　　　<b>第１３図　</b>ピロピロブ
+ザー</td>
+    </tr>
+  </tbody>
+</table>
+</p>
+<p>◆電子サイレン（第12図）<br>
+　第12図は電子サイレンの回路です。<br>
+スイッチを押すと100kΩを通して47μFのコンデンサに除除に充電されて行き、それと共に発振周波数も高くなっていきます。<br>
+　スイッチから手を離すと47μFから除除に放電して行き、発振周波数が段々と下がっていきます。<br>
+　二つの100kΩの抵抗と、47μFのコンデンサの値をいろいろ変えてみると楽しい音が発生します。</p>
+<p>◆ピロピロブザー（第13図）<br>
+　第13図の様に改造すると、発振音が断続して「ピロピロピロ…」という感じの音になります。<br>
+スピーカと並列に入れる2.2μFが小さすぎると断続の周期が早くなり過ぎて、音が濁った感じとなります。<br>
+　また、大きすぎると断続しなくなってしまいます。<br>
+　実際にスピーカから出る音の音量はオリジナル回路と比べて、相当大きく、お風呂ブザーなどのアラームとして使う場合にはオリジナル回路より優れていると
+いえるでしょう。
+</p>
+<!-- #####ここからアクセスログ用スクリプトです##### -->
+<script language="JavaScript"><!--
+    var ImageWidth  =  1;
+    var ImageHeight =  1;
+    var ScriptUrl   = 'http://www.fcz-lab.com/cgi/ana/log4.cgi';
+    var CounterName = 't-018';
+    var Tag = '<img' + ' src="' + ScriptUrl + '?' + CounterName +
+              '@' + document.referrer + '"' +  ' width=' +
+              ImageWidth + ' height=' + ImageHeight + '>';
+    document.write(Tag);
+    // --></script>
+<noscript><img src="log4.cgi?name@" width="1" height="1"></noscript>
+<!-- #####ここまでアクセスログ用スクリプトです##### -->
+</body>
+</html>

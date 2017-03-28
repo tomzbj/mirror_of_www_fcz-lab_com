@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta name="GENERATOR" content="Adobe PageMill 3.0J Mac">
+  <meta http-equiv="Content-Type" content="text/html;CHARSET=x-sjis">
+  <title>Untitled Document</title>
+</head>
+<body style="background-color: rgb(255, 253, 230);">
+<p>
+<table width="57" border="1" cellspacing="2" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="100%"><b><font size="+1"><a href="tera-list.html">・戻る</a></font></b></td>
+    </tr>
+  </tbody>
+</table>
+<table width="167" border="1" cellspacing="2" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="100%">　<font color="#ff0000">このページにはまだ図面の張り付けが済んでいません。　
+あしからず</font></td>
+    </tr>
+  </tbody>
+</table>
+</p>
+<center><b><font color="#0000ff" size="+3" face="平成角ゴシック">201
+ビジュアル電界強度計</font></b></center>
+<p><font face="平成角ゴシック">　第201-1図は寺子屋シリーズ#004のビジュアル電界強度計の回路図です．これはアンテナを理解
+するために非常に有能なツールでした．<br>
+　しかし，この有能なツールにも若干の欠点がありました．それは「アンテナの平衡性」の問題です．<br>
+　送信アンテナから#004を離して行き，LEDがちょうど消えるところでその位置を記録します．その後，その位置でアンテナの位相をひっ繰り返してみま
+す（垂直偏波の場合は上下を逆さにする．以下垂直偏波のアンテナで話をすすめます）．<br>
+　するとLEDが消える位置が違ってくるのです．<br>
+　この対策のために2SC1815のベースとエミッタの間に逆方向にダイオードを入れてあったのですが，どうしてもアンテナのエミッタ側がコールドになり
+やすく，アンテナの感度パターンにひずみが若干現れてしまうのでした．この誤差をなくすにはビジュアル電界強度計のアンテナの平衡をとってやる必要があり
+ます．</font></p>
+<p><font face="平成角ゴシック">　　　　　　　　　　　回路<br>
+　第201-2図が改良された回路です．#004の場合ダイオードが１本であったものを４本のブリッジにしました．このブリッジの採用でアンテナの平衡は
+完全になり，アンテナを裏返しにしても感度の差がなくなりました．</font>
+</p>
+<!-- #####ここからアクセスログ用スクリプトです##### -->
+<script language="JavaScript"><!--
+    var ImageWidth  =  1;
+    var ImageHeight =  1;
+    var ScriptUrl   = 'http://www.fcz-lab.com/cgi/ana/log4.cgi';
+    var CounterName = 't-201';
+    var Tag = '<img' + ' src="' + ScriptUrl + '?' + CounterName +
+              '@' + document.referrer + '"' +  ' width=' +
+              ImageWidth + ' height=' + ImageHeight + '>';
+    document.write(Tag);
+    // --></script>
+<noscript><img src="log4.cgi?name@" width="1" height="1"></noscript>
+<!-- #####ここまでアクセスログ用スクリプトです##### -->
+</body>
+</html>

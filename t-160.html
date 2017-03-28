@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta name="GENERATOR" content="Adobe PageMill 3.0J Mac">
+  <meta http-equiv="Content-Type" content="text/html;CHARSET=x-sjis">
+  <title>Untitled Document</title>
+</head>
+<body style="background-color: rgb(255, 253, 230);">
+<p>
+<table width="57" border="1" cellspacing="2" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="100%"><b><font size="+1"><a href="tera-list.html">・戻る</a></font></b></td>
+    </tr>
+  </tbody>
+</table>
+<table width="167" border="1" cellspacing="2" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="100%">　<font color="#ff0000">このページにはまだ図面の張り付けが済んでいません。　
+あしからず</font></td>
+    </tr>
+  </tbody>
+</table>
+</p>
+<center><b><font color="#0000ff" size="+3" face="平成角ゴシック">#160
+モールス練習機</font></b></center>
+<p><font face="平成角ゴシック"><br>
+　モールス符号を覚えようと考えたとき、「・－」という紙に書かれた符号を見て「Ａ」と覚える方法もありますが、やっぱり「ピピー」という音で覚える方が
+よいことはいうまでもありません。<br>
+　また、そのときの音ですが、ブザーを鳴らしたり、弛張発振器（寺子屋シリーズ#018)のような簡易発振器を用いても良いのですが、できればサイン波発
+振器を使った本格的な物を使いたいものです。</font></p>
+<center><font face="平成角ゴシック">　　　　　　　　　　　　<br>
+<b>回路</b></font></center>
+<p><font face="平成角ゴシック">　このキットはモールス符号の練習をするための物で、サインウエーブを発振する
+TT発振器と、信号をスピーカで鳴らすための LM386アンプからできています。<br>
+　第１図に全回路図を示します。</font></p>
+<p><b><font face="平成角ゴシック">　　発振部</font></b><font face="平成角ゴシック">　　　　　　<br>
+　ここで採用した TT 発振器は非常に簡単な回路ですが、きれいなサインウエーブを発生すると好評の、#114サイン発振器を採用しました。<br>
+　ハイパスフィルタの抵抗値（VR1,3.3kΩ半固定抵抗）を変化させることによって発振周波数を若干変化させる事ができます。この回路の場合は、約
+600～900Hz程度です。</font></p>
+<p><b><font face="平成角ゴシック">　　ＡＦアンプ</font></b><font face="平成角ゴシック"><br>
+　スピーカを鳴らすためのＡＦアンプは、#039のLM-386アンプの回路を使いました。<br>
+　音量はVR2によってコントロールする事ができます。　スピーカは外付けになりますが、そのインピーダンスは特に問いません。　できれば大型のしっかり
+した物を使ってください。<br>
+　ヘッドホンを使う場合は、アンプの S/Nを改善するために LM-386の
+1,8ピンに入っている10μFの電解コンデンサを外した方がよい場合があります。<br>
+　電源は5Vから 12Vの間で使用できますが、9Vの乾電池006Pが適しています。</font></p>
+<center><font face="平成角ゴシック">　　　　　　　　　　　　<br>
+<b>製作</b></font></center>
+<p><font face="平成角ゴシック">　このキットは、寺子屋シリーズ#229「
+FCZ基板コンビネーション５」という基板（第２図）に組み立てます。　この基板のIC取り付け部分は、電源、アースの配線を楽なものにするために、IC
+の中央部に電源とアースのブランチを設けてそのそれぞれにICのランドがすでに接続してあります。　したがって電源とアースに関係のない部分はカッターな
+どを使ってランドとブランチの間を切り取る必要があります。（第３図）<br>
+　この作業は、この基板を使って回路を組み立てる際、一番最初にやっていただかないといけませんが、その後の半田付が非常に簡略化されます。<br>
+　その後の配線は特に変わったところもありません。全体的には第４図のようになります。</font></p>
+<center><font face="平成角ゴシック">　　　　　　　　　　　<br>
+<b>機能拡張</b></font></center>
+<p><font face="平成角ゴシック">　このモールス練習機には「ツートーン発振器」「キーイング回路」等を組み込む事が出来ます。</font>
+</p>
+<!-- #####ここからアクセスログ用スクリプトです##### -->
+<script language="JavaScript"><!--
+    var ImageWidth  =  1;
+    var ImageHeight =  1;
+    var ScriptUrl   = 'http://www.fcz-lab.com/cgi/ana/log4.cgi';
+    var CounterName = 't-160';
+    var Tag = '<img' + ' src="' + ScriptUrl + '?' + CounterName +
+              '@' + document.referrer + '"' +  ' width=' +
+              ImageWidth + ' height=' + ImageHeight + '>';
+    document.write(Tag);
+    // --></script>
+<noscript><img src="log4.cgi?name@" width="1" height="1"></noscript>
+<!-- #####ここまでアクセスログ用スクリプトです##### -->
+</body>
+</html>
